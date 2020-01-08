@@ -44,7 +44,7 @@ func (self Session_protector) __calc_hash(session_key string, val int) string {
         result := ""
         ret := ""
         for idx := 0; idx < 5; idx++ {
-        result += string(session_key[idx]) /*袟袛袝小鞋 袨楔袠袘袣袗*/
+        result += string(session_key[idx]) 
         }
         i, _ := strconv.Atoi(result)
         result = "00" + strconv.Itoa(i % 97)
